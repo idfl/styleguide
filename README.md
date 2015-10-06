@@ -6,9 +6,13 @@ Official IDFL code style guide. Contains basic project/app structure and general
   1. [Django](#django)
   1. [AngularJS 1.x](#angularjs-1x)
   1. [Frontend Styling](#frontend-styling)
+  1. [General](#general)
+  1. [Pro Tips](#pro-tips)
   1. [Resources](#resources)
 
 ## Django
+
+In general, we follow the PEP 0008 style guide for all Python code, with a few modifications for clarity and to promote consistency. See the [IDFL PEP 0008 style guide](https://github.com/idfl/styleguide/blob/master/pep-0008.md) for full details.
 
 ### Django REST
 All apps should utilize the Django REST framework to handle their API. See the [Django REST API](http://www.django-rest-framework.org/#api-guide) for features and implementation details.
@@ -80,6 +84,30 @@ We use FontAwesome for all icons. See [FontAwesome](http://fontawesome.io/) docs
 
 ### SCSS
 All custom project and app specific styling should be written and compiled using SCSS. We use the new SCSS over the original SASS syntax. See the [Sass Basics](http://sass-lang.com/guide) for basic API details.
+
+**[Back to top](#table-of-contents)**
+
+## General
+This section contains general rules of thumb. Unless explicitly stated, they apply in a general sense to any and all language used at IDFL.
+
+### Variable Names
+In general, follow the naming conventions as specified by the specific language you are working in. Be specific in variable names, others should be able to immediately know what they represent. Avoid unnecessary abbreviations when possible. All variables must be more than 1 character long, except when used as an iterator. 
+
+```
+  Good:
+      username = 'fariz.idfl'
+      name = 'Fariz'
+      
+  Bad:
+      usrnm = 'fariz.idfl'
+      nm = 'Fariz'
+      c = 42
+```
+
+**[Back to top](#table-of-contents)**
+
+## Pro Tips
+This section will contain any and all useful functions/techniques that we wish someone had told us about when starting out.
 
 **[Back to top](#table-of-contents)**
 
